@@ -23,15 +23,21 @@ Clone the repository:
 git clone https://github.com/EclipseDaemon/ReduxStore.git
 ```
 
+Navigate to the project directory:
+
 ```bash
 cd ReduxStore
 
 ```
 
+Install dependencies:
+
 ```bash
 npm install
 
 ```
+
+▶️ Running the Project:
 
 ```bash
 npm run dev
