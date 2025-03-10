@@ -77,11 +77,7 @@ const Homepage = () => {
         {/* Sign-up-Image Section */}
         <section id="signupimg" className="mb-12 md:mb-32">
           <div className="max-w-7xl mx-auto px-4">
-            <img
-              src="./signupbanner.jpg"
-              alt="signupImage"
-              className="w-full h-fit "
-            />
+            <img src="./signupbanner.jpg" alt="signupImage" />
           </div>
         </section>
         {/* Contact-us Section */}
