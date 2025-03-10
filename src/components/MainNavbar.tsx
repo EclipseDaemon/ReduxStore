@@ -35,7 +35,7 @@ export function MainNavbar() {
           <div className="flex items-center gap-4 mr-4">
             <Link to={"/cart"} className="relative">
               {cartCount > 0 ? (
-                <span className="absolute text-[7px] flex justify-center items-center top-0 bg-red-600 right-0 text-white p-1 rounded-full w-4 h-4">
+                <span className="absolute text-[10px] flex justify-center items-center top-0 bg-red-600 right-0 text-white p-1 rounded-full w-4 h-4">
                   {cartCount > 9 ? "9+" : cartCount}
                 </span>
               ) : (

@@ -1,5 +1,9 @@
 import { useDispatch } from "react-redux";
-import { removeFromCart } from "../store/actions";
+import {
+  removeFromCart,
+  increaseQuantity,
+  decreaseQuantity,
+} from "../store/actions";
 
 const CartComponent = ({
   id,
@@ -30,9 +34,19 @@ const CartComponent = ({
       </div>
       <div className="flex flex-col gap-3 md:mr-7">
         <div className="flex flex-row gap-5 items-center justify-center border px-2 py-1 rounded">
-          <span className="text-2xl cursor-pointer">-</span>
+          <span
+            className="text-2xl cursor-pointer"
+            onClick={() => dispatch(decreaseQuantity(id))}
+          >
+            -
+          </span>
           <p>{quantity}</p>
-          <span className="text-2xl cursor-pointer">+</span>
+          <span
+            className="text-2xl cursor-pointer"
+            onClick={() => dispatch(increaseQuantity(id))}
+          >
+            +
+          </span>
         </div>
         <button
           className="themebutton_delete"
