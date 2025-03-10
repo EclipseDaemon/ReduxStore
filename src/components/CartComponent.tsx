@@ -1,3 +1,6 @@
+import { useDispatch } from "react-redux";
+import { removeFromCart } from "../store/actions";
+
 const CartComponent = ({
   id,
   img,
@@ -11,6 +14,8 @@ const CartComponent = ({
   price: number;
   quantity: number;
 }) => {
+  const dispatch = useDispatch();
+
   return (
     <div
       className="border p-2 flex flex-col md:flex-row justify-between items-center md:gap-0 gap-5"
@@ -29,7 +34,12 @@ const CartComponent = ({
           <p>{quantity}</p>
           <span className="text-2xl cursor-pointer">+</span>
         </div>
-        <button className="themebutton_delete">Delete</button>
+        <button
+          className="themebutton_delete"
+          onClick={() => dispatch(removeFromCart(id))}
+        >
+          Delete
+        </button>
       </div>
     </div>
   );

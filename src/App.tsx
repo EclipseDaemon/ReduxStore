@@ -3,6 +3,7 @@ import CartPage from "./Pages/CartPage";
 import { MainNavbar } from "./components/MainNavbar";
 import { MainFooter } from "./components/MainFooter";
 import Homepage from "./Pages/HomePage";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             </div>
           </div>
         </section>
+        <ToastContainer />
         <MainNavbar />
         <Routes>
           <Route path="/" element={<Homepage />} />

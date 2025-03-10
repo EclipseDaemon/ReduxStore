@@ -37,7 +37,7 @@ const Homepage = () => {
                   price: number;
                   img: string;
                 }) => (
-                  <ProductCard key={id} name={name} price={price} img={img} />
+                  <ProductCard id={id} name={name} price={price} img={img} />
                 )
               )}
             </div>

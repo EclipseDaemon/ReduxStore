@@ -1,23 +1,9 @@
 import { Link } from "react-router-dom";
 import CartComponent from "../components/CartComponent";
+import { useSelector } from "react-redux";
 
 const CartPage = () => {
-  const cart: {
-    id: number;
-    img: string;
-    name: string;
-    price: number;
-    quantity: number;
-  }[] = [
-    {
-      id: 1,
-      img: "./4.jpg",
-      name: "Gucci T-Shirt",
-      price: 100,
-      quantity: 1,
-    },
-  ];
-
+  const cart = useSelector((state: any) => state.cartReducer.cart);
   return (
     <section className="py-11">
       <div className="max-w-7xl mx-auto px-4">
