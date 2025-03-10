@@ -53,7 +53,7 @@ const CartPage = () => {
                 <p className="text-center text-lg">Your Cart is Empty.</p>
                 <Link to={"/"}>
                   <button className="themebutton w-fit ">
-                    Continue Shoppingg
+                    Continue Shopping
                   </button>
                 </Link>
               </div>
