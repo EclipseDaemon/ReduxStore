@@ -20,7 +20,7 @@ const ProductCard = ({
     dispatch(addToCart(product));
 
     toast.success("Item added to cart!", {
-      position: "top-right",
+      position: "top-center",
       autoClose: 500,
       hideProgressBar: true,
       closeOnClick: true,
