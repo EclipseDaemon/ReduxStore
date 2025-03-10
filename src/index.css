@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+.navbar-link {
+  position: relative;
+}
+.navbar-link:before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+.navbar-link:hover:before {
+  width: 100%;
+}
+.navbar-link:hover {
+  color: black !important;
+}
+.navbar-link.active {
+  color: black !important;
+}
+
+#heroslider div div div {
+  border-radius: 0px !important;
+}
+
+.slick-prev {
+  left: 20px !important;
+  z-index: 10 !important;
+}
+.slick-next {
+  right: 20px !important;
+  z-index: 10 !important;
+}
+
+.themebutton {
+  background-color: transparent;
+  color: black;
+  padding: 5px 10px;
+  font-size: small;
+  border: 1px solid black;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.themebutton:hover {
+  background-color: black;
+  color: white;
+}
+
+.themebutton_delete {
+  background-color: transparent;
+  color: black;
+  padding: 5px 10px;
+  font-size: small;
+  border: 1px solid black;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.themebutton_delete:hover {
+  background-color: rgb(186, 13, 13);
+  color: white;
+}
