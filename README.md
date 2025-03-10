@@ -1,6 +1,7 @@
 # ReduxStore 🛍️
 
 A modern e-commerce clothing store built using **React, Redux, and TypeScript**.
+**Check out live site link:** https://reduxclothingstore.netlify.app/
 
 ## 🚀 Features
 
